@@ -1,0 +1,32 @@
+openapi: 3.0.3
+info:
+  title: Jawdhar Blog Posts API
+  version: 1.0.0
+paths:
+  /%2Fv1%2Fblogposts:
+    get:
+      operationId: get/v1/blogposts
+      responses:
+        '200':
+          description: ''
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetPostsResponse'
+components:
+  schemas:
+    GetPostsResponse:
+      required:
+      - metaData
+      type: object
+      properties:
+        metaData:
+          $ref: '#/components/schemas/Map_String'
+        posts:
+          type: array
+          items:
+            type: string
+    Map_String:
+      type: object
+      additionalProperties:
+        type: string

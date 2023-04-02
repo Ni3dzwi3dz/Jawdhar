@@ -1,2 +1,57 @@
+### Scala template
 *.class
 *.log
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+### SBT template
+# Simple Build Tool
+# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
+
+target/
+lib_managed/
+src_managed/
+project/boot/
+.history
+.cache
+
+### Intellij
+.idea
+*.iml
+.attach_pid*
+
+dist/
+/target
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.bsp
+.lib/
+
+### VS CODE and Metals
+.vscode
+.metals/
+.bloop/
+.idea/
+.
+.DS_Store
+/project/target/
+/blogpostsAPI/target/
+/.vscode/
+/blogpostsAPI/target/
+/server/target/
+/blogpostsAPI/target/
